@@ -1,0 +1,57 @@
+Dataset Profiling Summary
+=========================
+
+ride_sharing_new.csv
+------------------------------
+Rows: 25760
+Columns: 9
+Schema:
+  - duration             |     0 nulls | 0.7% unique [NORMAL]
+  - station_A_id         |     0 nulls | 0.0% unique [NORMAL]
+  - station_A_name       |     0 nulls | 0.0% unique [NORMAL]
+  - station_B_id         |     0 nulls | 0.6% unique [NORMAL]
+  - station_B_name       |     0 nulls | 0.6% unique [NORMAL]
+
+restaurants_L2_dirty.csv
+------------------------------
+Rows: 82
+Columns: 5
+Schema:
+  - name                 |     0 nulls | 93.9% unique [NORMAL]
+  - addr                 |     0 nulls | 98.8% unique [NORMAL]
+  - city                 |     0 nulls | 35.4% unique [NORMAL]
+  - phone                |     0 nulls | 100.0% unique [NORMAL]
+  - type                 |     0 nulls | 40.2% unique [NORMAL]
+
+restaurants_L2.csv
+------------------------------
+Rows: 336
+Columns: 5
+Schema:
+  - name                 |     0 nulls | 98.5% unique [NORMAL]
+  - addr                 |     0 nulls | 99.4% unique [NORMAL]
+  - city                 |     0 nulls | 4.2% unique [NORMAL]
+  - phone                |     0 nulls | 100.0% unique [NORMAL]
+  - type                 |     0 nulls | 2.7% unique [NORMAL]
+
+banking_dirty.csv
+------------------------------
+Rows: 100
+Columns: 11
+Schema:
+  - cust_id              |     0 nulls | 100.0% unique [NORMAL]
+  - birth_date           |     0 nulls | 99.0% unique [NORMAL]
+  - Age                  |     0 nulls | 34.0% unique [NORMAL]
+  - acct_amount          |     0 nulls | 100.0% unique [NORMAL]
+  - inv_amount           |     0 nulls | 100.0% unique [NORMAL]
+
+airlines_final.csv
+------------------------------
+Rows: 2477
+Columns: 12
+Schema:
+  - id                   |     0 nulls | 100.0% unique [NORMAL]
+  - day                  |     0 nulls | 0.3% unique [NORMAL]
+  - airline              |     0 nulls | 1.3% unique [NORMAL]
+  - destination          |     0 nulls | 2.9% unique [NORMAL]
+  - dest_region          |     0 nulls | 0.5% unique [NORMAL]

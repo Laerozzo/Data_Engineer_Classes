@@ -1,0 +1,13 @@
+ride_id,duration,station_A_id,station_A_name,station_B_id,user_type,user_birth_year,user_gender,tire_sizes,ride_date
+0,12 minutes,3,Powell St BART,47,2,1988,Male,26,2026-03-10
+1,24 minutes,3,Powell St BART,15,1,1992,Female,27,2026-04-12
+2,8 minutes,15,San Francisco Ferry,21,3,1979,Male,29,2026-05-01
+3,15 minutes,21,Montgomery St,81,2,1995,Female,26,2027-08-15
+4,31 minutes,81,Berry St,3,1,1984,Male,27,2026-02-20
+5,19 minutes,3,Powell St BART,47,3,1990,Male,29,2026-06-11
+6,11 minutes,15,San Francisco Ferry,81,2,2001,Female,26,2026-01-25
+7,42 minutes,21,Montgomery St,3,1,1975,Other,27,2028-01-01
+8,10 minutes,81,Berry St,15,2,1989,Male,26,2026-07-19
+8,10 minutes,81,Berry St,15,2,1989,Male,26,2026-07-19
+9,14 minutes,3,Powell St BART,21,3,1980,Female,27,2026-08-05
+9,26 minutes,3,Powell St BART,21,3,1982,Female,27,2026-08-05

@@ -1,0 +1,9 @@
+id,full_name,day,airline,destination,dest_region,dest_size,boarding_area,dept_time,wait_min,cleanliness,safety,satisfaction,survey_response
+1351,Dr. Alan Turing,Tuesday,UNITED INTL,KANSAI,Asia,Hub,Gates 91-102,2026-12-31,115.0,Clean,Neutral,Very satisfied,It was terrible
+373,Ms. Ada Lovelace,Friday,ALASKA,SAN JOSE DEL CABO,Canada/Mexico,Small,Gates 50-59,2026-12-31,135.0,Clean,Very safe,Very satisfied,"The airport personnell forgot to alert us of delayed flights, the bathrooms could have been cleaner"
+2820,Mr. Charles Babbage,Thursday,DELTA,LOS ANGELES,West US,Hub     ,Gates 40-48,2026-12-31,70.0,Average,Somewhat safe,Neutral,The food in the lounge was really good and the wifi was super fast throughout the terminal
+1157,Miss Grace Hopper,Tuesday,SOUTHWEST,GUADALAJARA,Canada/Mexico,Medium,Gates 20-39,2026-12-31,190.0,Clean,Very safe,Somewhat satisfied,Good experience
+2992,Dr. John von Neumann,Wednesday,AMERICAN,MIAMI,East US,Hub,Gates 40-48,2026-12-31,45.0,Unacceptable,Very safe,Somewhat satisfied,I waited way too long at security check and missed my boarding group announcement completely
+634,Mr. Tim Berners-Lee,Saturday,UNITED,NEWARK,eur,  Large,Gates 70-90,2026-12-31,210.0,Somewhat clean,Somewhat safe,Very satisfied,Smooth check-in
+2578,Ms. Margaret Hamilton,Sunday,JETBLUE,BOSTON,EAST US,Large  ,Gates 1-19,2026-12-31,55.0,Clean,Very safe,Very satisfied,Everything from baggage drop to the gate boarding process was seamless and well organized
+1942,Mr. Donald Knuth,Monday,ALASKA,SEATTLE,West US,Hub,Gates 50-59,2026-12-31,95.0,Average,Neutral,Somewhat satisfied,Okay flight

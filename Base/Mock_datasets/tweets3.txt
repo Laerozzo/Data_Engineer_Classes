@@ -1,0 +1,5 @@
+{"id": 101, "text": "RT @DataCamp: Loving Python and clinton vs trump debates in data science! #python", "lang": "en", "user": {"screen_name": "data_fan"}}
+{"id": 102, "text": "Bernie Sanders and Hillary Clinton discussed policy on stage tonight.", "lang": "en", "user": {"screen_name": "pol_watch"}}
+{"id": 103, "text": "Donald Trump rally numbers vs Cruz numbers analyzed in pandas.", "lang": "en", "user": {"screen_name": "stat_nerd"}}
+{"id": 104, "text": "Check out how Trump and Clinton are trending on Twitter API streams!", "lang": "en", "user": {"screen_name": "api_dev"}}
+{"id": 105, "text": "Sanders campaign releases new open dataset for analysis.", "lang": "en", "user": {"screen_name": "open_data"}}

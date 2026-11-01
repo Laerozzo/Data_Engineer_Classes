@@ -1,0 +1,49 @@
+﻿
+============================================================
+PROFILING: ride_sharing_new.csv
+============================================================
+Row Count: 25760
+Column Count: 10
+Success: ride_sharing_new.csv: 25760 rows, 9 columns
+
+============================================================
+PROFILING: restaurants_L2_dirty.csv
+============================================================
+Row Count: 82
+Column Count: 6
+Success: restaurants_L2_dirty.csv: 82 rows, 5 columns
+
+============================================================
+PROFILING: restaurants_L2.csv
+============================================================
+Row Count: 336
+Column Count: 6
+Success: restaurants_L2.csv: 336 rows, 5 columns
+
+============================================================
+PROFILING: banking_dirty.csv
+============================================================
+Row Count: 100
+Column Count: 12
+Success: banking_dirty.csv: 100 rows, 11 columns
+
+============================================================
+PROFILING: airlines_final.csv
+============================================================
+Row Count: 2477
+Column Count: 13
+Success: airlines_final.csv: 2477 rows, 12 columns
+HTML report saved successfully: D:\Data Engineer\Python\MKD_Classes\Base\Datasets\profiles_report.html
+python : Traceback (most recent call last):
+At line:2 char:59
++ ... ing]::UTF8; python "D:/Data Engineer/Python/MKD_Classes/Base/Datasets ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "D:\Data Engineer\Python\MKD_Classes\Base\Datasets\profile_datalakes.py", line 239, in <module>
+    print(f"\n\U0001f4c4 Summary saved to: {summary_path}")
+  File "C:\Users\NZXT\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f4c4' in position 2: character maps to <undefined>

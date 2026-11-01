@@ -1,0 +1,7 @@
+id,name,rest_name,addr,city,phone,type,cuisine_type
+100,arnie mortons of chicago,arnie mortons of chicago,435 s. la cienega blvd.,los angeles,3102461501,american,american
+101,artsana deli,artsana deli,12224 ventura blvd,studio city,8187621221,american,american
+102,campanile restaurant,campanile restaurant,624 s. la brea ave,los angeles,2139381447,italian,italian
+103,matsuhisa beverly hills,matsuhisa beverly hills,129 n. la cienega blvd,beverly hills,3106599639,asian,asian
+104,spago hollywood,spago hollywood,1114 horn ave,west hollywood,3106524025,southern,southern
+105,new bistro,new bistro,500 main st,los angeles,3105559999,french,french
