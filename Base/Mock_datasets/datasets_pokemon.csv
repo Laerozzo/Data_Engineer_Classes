@@ -1,0 +1,16 @@
+Name,Primary_Type,Secondary_Type,Generation,Legendary,HP,Attack,Defense,Speed
+Bulbasaur,Grass,Poison,1,False,45,49,49,45
+Charmander,Fire,,1,False,39,52,43,65
+Squirtle,Water,,1,False,44,48,65,43
+Caterpie,Bug,,1,False,45,30,35,45
+Pidgey,Normal,Flying,1,False,40,45,40,56
+Pikachu,Electric,,1,False,35,55,40,90
+Abra,Psychic,,1,False,25,20,15,90
+Onix,Rock,Ground,1,False,35,45,160,70
+Jynx,Ice,Psychic,1,False,65,50,35,95
+Articuno,Ice,Flying,1,True,90,85,100,85
+Natu,Psychic,Flying,2,False,40,50,45,70
+Aron,Steel,Rock,3,False,50,70,100,30
+Absol,Dark,,3,False,65,130,60,75
+Abomasnow,Grass,Ice,4,False,90,92,75,60
+Zubat,Poison,Flying,1,False,40,45,35,55
