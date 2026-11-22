@@ -1,0 +1,65 @@
+{
+  "columns": [
+    "age_adjusted_death_rate",
+    "death_rate",
+    "deaths",
+    "leading_cause",
+    "race_ethnicity",
+    "sex",
+    "year"
+  ],
+  "index": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "data": [
+    [
+      "7.6",
+      "6.2",
+      "32",
+      "Accidents Except Drug Poisoning (V01-X39, X43, X45-X59, Y85-Y86)",
+      "Asian and Pacific Islander",
+      "F",
+      "2007"
+    ],
+    [
+      "8.1",
+      "8.3",
+      "87",
+      "Accidents Except Drug Poisoning (V01-X39, X43, X45-X59, Y85-Y86)",
+      "Black Non-Hispanic",
+      "F",
+      "2007"
+    ],
+    [
+      "7.1",
+      "6.1",
+      "71",
+      "Accidents Except Drug Poisoning (V01-X39, X43, X45-X59, Y85-Y86)",
+      "Hispanic",
+      "F",
+      "2007"
+    ],
+    [
+      null,
+      null,
+      null,
+      "Accidents Except Drug Poisoning (V01-X39, X43, X45-X59, Y85-Y86)",
+      "Not Stated/Unknown",
+      "F",
+      "2007"
+    ],
+    [
+      null,
+      null,
+      null,
+      "Accidents Except Drug Poisoning (V01-X39, X43, X45-X59, Y85-Y86)",
+      "Other Race/Ethnicity",
+      "F",
+      "2007"
+    ]
+  ]
+}

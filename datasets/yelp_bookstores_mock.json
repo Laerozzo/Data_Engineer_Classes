@@ -1,0 +1,93 @@
+{
+  "total": 8228,
+  "businesses": [
+    {
+      "id": "_rbF2ooLcMRA7Kh8neIr4g",
+      "alias": "city-lights-bookstore-san-francisco",
+      "name": "City Lights Bookstore",
+      "rating": 4.5,
+      "price": "$$",
+      "review_count": 680,
+      "categories": [
+        {
+          "alias": "bookstores",
+          "title": "Bookstores"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7975997924805,
+        "longitude": -122.406578063965
+      },
+      "location": {
+        "address1": "261 Columbus Ave",
+        "address2": "",
+        "address3": "",
+        "city": "San Francisco",
+        "zip_code": "94133",
+        "country": "US",
+        "state": "CA"
+      },
+      "url": "https://www.yelp.com/biz/city-lights-bookstore-san-francisco"
+    },
+    {
+      "id": "abc1234567890",
+      "alias": "alexander-book-company-san-francisco",
+      "name": "Alexander Book Company",
+      "rating": 4.5,
+      "price": "$$",
+      "review_count": 310,
+      "categories": [
+        {
+          "alias": "bookstores",
+          "title": "Bookstores"
+        },
+        {
+          "alias": "stationery",
+          "title": "Cards & Stationery"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7885846793652,
+        "longitude": -122.400631103516
+      },
+      "location": {
+        "address1": "50 2nd St",
+        "address2": "",
+        "address3": "",
+        "city": "San Francisco",
+        "zip_code": "94105",
+        "country": "US",
+        "state": "CA"
+      },
+      "url": "https://www.yelp.com/biz/alexander-book-company-san-francisco"
+    },
+    {
+      "id": "def9876543210",
+      "alias": "borderlands-books-san-francisco",
+      "name": "Borderlands Books",
+      "rating": 5.0,
+      "price": "$$",
+      "review_count": 420,
+      "categories": [
+        {
+          "alias": "bookstores",
+          "title": "Bookstores"
+        }
+      ],
+      "coordinates": {
+        "latitude": 37.7589836120605,
+        "longitude": -122.42163848877
+      },
+      "location": {
+        "address1": "866 Valencia St",
+        "address2": "",
+        "address3": "",
+        "city": "San Francisco",
+        "zip_code": "94110",
+        "country": "US",
+        "state": "CA"
+      },
+      "url": "https://www.yelp.com/biz/borderlands-books-san-francisco"
+    }
+  ]
+}

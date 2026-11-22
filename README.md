@@ -7,7 +7,7 @@
 [![DataCamp](https://img.shields.io/badge/Courses-DataCamp-03EF62?style=for-the-badge&logo=datacamp&logoColor=05192D)](https://www.datacamp.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-A curated collection of interactive **Jupyter Notebooks (`.ipynb`)** containing structured study notes, runnable code examples, and offline-ready mock datasets from seven **DataCamp** Python courses.
+A curated collection of interactive **Jupyter Notebooks (`.ipynb`)** containing structured study notes, runnable code examples, and offline-ready mock datasets from eight **DataCamp** Python courses.
 
 Each notebook has been standardized for readability and enhanced with:
 * **Key Takeaways** at the end of every chapter.
@@ -28,6 +28,7 @@ Each notebook has been standardized for readability and enhanced with:
 | **05** | [`Introduction_to_APIs_in_Python_revised.ipynb`](./Introduction_to_APIs_in_Python_revised.ipynb) | **Introduction to APIs in Python** | **Ch 1:** SOAP vs REST vs GraphQL, URL anatomy, automatic query parameter encoding (`params=`)<br>**Ch 2:** HTTP verbs (`GET`, `POST`, `PUT`, `DELETE`), HTTP status codes (`requests.codes`), Headers, Basic & Bearer Token Auth<br>**Ch 3:** JSON serialization (`dumps`/`loads`, `json=`), `ConnectionError` & `HTTPError` (`raise_for_status()`), rate-limit throttling (`time.sleep`) |
 | **06** | [`Cleaning_Data_in_Python_revised.ipynb`](./Cleaning_Data_in_Python_revised.ipynb) | **Cleaning Data in Python** | **Ch 1:** Data type constraints (`.astype`), range capping (`.loc[]`), exact & partial deduplication (`.duplicated`, `.groupby().agg()`)<br>**Ch 2:** Membership constraints (`set.difference`, `.isin`), categorical binning (`pd.cut`, `pd.qcut`), text cleaning<br>**Ch 3:** Currency & date uniformity (`errors='coerce'`), cross-field validation, missingness (MCAR/MAR/MNAR, `dropna`, `fillna`)<br>**Ch 4:** Fuzzy string matching (`thefuzz` / Levenshtein distance) and Record Linkage (`recordlinkage` blocking, scoring, linking) |
 | **07** | [`Writing_Efficient_Python_Code_revised.ipynb`](./Writing_Efficient_Python_Code_revised.ipynb) | **Writing Efficient Python Code** | **Ch 1:** Pythonic idioms (`import this`), built-ins (`range`, `enumerate`, `map`), `NumPy` array broadcasting & boolean indexing<br>**Ch 2:** Runtime benchmarking (`%timeit`, `%%timeit`), line-by-line profiling (`line_profiler` / `%lprun`), memory profiling (`sys.getsizeof`, `memory_profiler` / `%mprun`)<br>**Ch 3:** Combining & counting (`zip`, `collections.Counter`, `itertools.combinations`), Set theory ($O(1)$ membership, `intersection`, `difference`, `symmetric_difference`, `union`), eliminating & optimizing loops<br>**Ch 4:** `pandas` iteration hierarchy (`.iloc` vs `.iterrows()` vs `.itertuples()` vs `.apply()` vs `.values` NumPy vectorization) |
+| **08** | [`Streamlined_Data_Ingestion_with_pandas.ipynb`](./Streamlined_Data_Ingestion_with_pandas.ipynb) | **Streamlined Data Ingestion with pandas** | **Ch 1:** Flat files with `pd.read_csv()` (`sep`, `usecols`, `nrows`, `skiprows`, `header=None`, `names`, `dtype`, `na_values`, `on_bad_lines`)<br>**Ch 2:** Excel workbooks with `pd.read_excel()` (letter ranges `W:AB, AR`, `sheet_name=None`, `true_values`/`false_values`, nullable booleans, `parse_dates` & `pd.to_datetime()`)<br>**Ch 3:** Relational databases with `sqlalchemy.create_engine()` & `pd.read_sql()` (`SELECT`, `WHERE`, `AND`/`OR`, `DISTINCT`, `GROUP BY`, `JOIN`)<br>**Ch 4:** JSON orientations (`pd.read_json(..., orient='split')`), REST APIs (`requests.get()`, `params`, `headers`), flattening nested JSON (`pd.json_normalize()`), `pd.concat()`, & `df.merge()` |
 
 ---
 
@@ -45,38 +46,50 @@ Each notebook has been standardized for readability and enhanced with:
 ├── Introduction_to_APIs_in_Python_revised.ipynb
 ├── Cleaning_Data_in_Python_revised.ipynb
 ├── Writing_Efficient_Python_Code_revised.ipynb
+├── Streamlined_Data_Ingestion_with_pandas.ipynb
 └── datasets/
-    ├── Chinook.sqlite                # Relational database (Employee, Artist, Album tables)
-    ├── a_movie.json                  # Sample OMDb movie metadata JSON
-    ├── airlines_final.csv            # Airline survey responses & wait times
-    ├── albeck_gene_expression.mat    # MATLAB workspace array data
-    ├── api_albums_mock.csv           # Mock albums dataset for API exercises
-    ├── api_tracks_mock.json          # Mock paginated tracks JSON payload
-    ├── banking_dirty.csv             # Banking records with currency, age, and missing value issues
-    ├── baseball_stats.csv            # MLB team runs scored (RS), runs allowed (RA), wins (W), games (G)
-    ├── battledeath.xlsx              # Multi-sheet Excel workbook (2002 & 2004 sheets)
-    ├── categories.csv                # Ground-truth valid categories lookup table
-    ├── data.pkl                      # Pickled Python dictionary
-    ├── dataset.hdf5                  # Hierarchical numerical HDF5 file
-    ├── digits.csv                    # 28x28 grayscale handwritten digit pixel rows
-    ├── digits_header.txt             # Tab-delimited digit pixel data with header
-    ├── disarea.dta                   # Stata disease extent dataset
-    ├── hero_funcs.py                 # External helper functions for %mprun memory profiling
-    ├── huck_finn.txt                 # Plain text excerpt (Adventures of Huckleberry Finn)
-    ├── latitude.xlsx                 # Multi-sheet country latitude Excel workbook ('1700', '1900')
-    ├── moby_dick.txt                 # Plain text excerpt (Moby-Dick)
-    ├── pokemon.csv                   # Pokédex stats (HP, Attack, Defense, Speed, Type, Legendary, Generation)
-    ├── restaurants_L2.csv            # Restaurant records for fuzzy matching & linkage (Table A)
-    ├── restaurants_L2_dirty.csv      # Partner restaurant records for record linkage (Table B)
-    ├── ride_sharing_new.csv          # Ride-sharing logs with duration strings, tire sizes & duplicates
-    ├── sales.csv                     # User order values CSV
-    ├── seaslug.txt                   # Tab-delimited time vs. percentage of larvae data
-    ├── superheroes.csv               # Superhero heights (cm) and weights (kg) for runtime/memory profiling
-    ├── titanic.csv                   # Passenger survival dataset
-    ├── titanic_corrupt.txt           # Tab-delimited file with '#' comments and 'Nothing' NaNs
-    ├── tweets3.txt                   # Newline-delimited JSON (JSONL) tweet stream
-    ├── urbanpop.xlsx                 # Urban population Excel workbook
-    └── winequality-red.csv           # Semicolon-delimited red wine physiochemical properties
+    ├── Chinook.sqlite                  # Relational database (Employee, Artist, Album tables)
+    ├── a_movie.json                    # Sample OMDb movie metadata JSON
+    ├── airlines_final.csv              # Airline survey responses & wait times
+    ├── albeck_gene_expression.mat      # MATLAB workspace array data
+    ├── api_albums_mock.csv             # Mock albums dataset for API exercises
+    ├── api_tracks_mock.json            # Mock paginated tracks JSON payload
+    ├── banking_dirty.csv               # Banking records with currency, age, and missing value issues
+    ├── baseball_stats.csv              # MLB team runs scored (RS), runs allowed (RA), wins (W), games (G)
+    ├── battledeath.xlsx                # Multi-sheet Excel workbook (2002 & 2004 sheets)
+    ├── call_counts.csv                 # Daily NYC 311 call counts for DataFrame merging
+    ├── categories.csv                  # Ground-truth valid categories lookup table
+    ├── data.db                         # SQLite database (weather, hpd311calls, boro_census tables)
+    ├── data.pkl                        # Pickled Python dictionary
+    ├── dataset.hdf5                    # Hierarchical numerical HDF5 file
+    ├── digits.csv                      # 28x28 grayscale handwritten digit pixel rows
+    ├── digits_header.txt               # Tab-delimited digit pixel data with header
+    ├── disarea.dta                     # Stata disease extent dataset
+    ├── fcc_survey.xlsx                 # Multi-sheet developer survey workbook ('2016', '2017') with timestamps
+    ├── fcc_survey_booleans.xlsx        # Survey dataset with binary, Yes/No, and TRUE/FALSE columns
+    ├── fcc_survey_with_headers.xlsx    # Survey workbook with metadata title rows & wide Excel columns
+    ├── hero_funcs.py                   # External helper functions for %mprun memory profiling
+    ├── huck_finn.txt                   # Plain text excerpt (Adventures of Huckleberry Finn)
+    ├── latitude.xlsx                   # Multi-sheet country latitude Excel workbook ('1700', '1900')
+    ├── moby_dick.txt                   # Plain text excerpt (Moby-Dick)
+    ├── nyc_death_causes.json           # Split-oriented JSON dataset of NYC leading death causes
+    ├── pokemon.csv                     # Pokédex stats (HP, Attack, Defense, Speed, Type, Legendary, Generation)
+    ├── restaurants_L2.csv              # Restaurant records for fuzzy matching & linkage (Table A)
+    ├── restaurants_L2_dirty.csv        # Partner restaurant records for record linkage (Table B)
+    ├── ride_sharing_new.csv            # Ride-sharing logs with duration strings, tire sizes & duplicates
+    ├── sales.csv                       # User order values CSV
+    ├── seaslug.txt                     # Tab-delimited time vs. percentage of larvae data
+    ├── superheroes.csv                 # Superhero heights (cm) and weights (kg) for runtime/memory profiling
+    ├── titanic.csv                     # Passenger survival dataset
+    ├── titanic_corrupt.txt             # Tab-delimited file with '#' comments and 'Nothing' NaNs
+    ├── tweets3.txt                     # Newline-delimited JSON (JSONL) tweet stream
+    ├── urbanpop.xlsx                   # Urban population Excel workbook
+    ├── us_tax_data_2016.csv            # IRS ZIP-code tax return statistics (CSV)
+    ├── us_tax_data_2016.tsv            # IRS ZIP-code tax return statistics (tab-delimited TSV)
+    ├── us_tax_data_2016_corrupt.csv    # IRS tax CSV containing a malformed row for ParserError handling
+    ├── weather_daily.csv               # Daily NYC temperature records (tmax, tmin) for DataFrame merging
+    ├── winequality-red.csv             # Semicolon-delimited red wine physiochemical properties
+    └── yelp_bookstores_mock.json       # Nested Yelp Business Search API JSON response payload
 ```
 
 ---
@@ -108,25 +121,25 @@ jupyter lab
 # or
 jupyter notebook
 ```
-Open any of the `*_revised.ipynb` files in your browser or VS Code Jupyter extension and run all cells (`Run All`).
+Open any of the `*.ipynb` files in your browser or VS Code Jupyter extension and run all cells (`Run All`).
 
 ---
 
 ## 📖 What You Will Find at the End of Every Chapter
 
-Every chapter across all seven notebooks follows a consistent review template designed for quick revision and interview prep:
+Every chapter across all eight notebooks follows a consistent review template designed for quick revision and interview prep:
 1. **Key Takeaways**: Concise summary of the most important concepts and gotchas from the chapter.
 2. **Step-by-Step Process to Act On**: A numbered checklist showing how to apply the chapter's tools in a real data pipeline.
-3. **Glossary & Official Documentation Table**: A quick-reference table listing every module, function, method, class, and attribute introduced in that chapter, its accepted parameters, and a direct link to the official documentation (`docs.python.org`, `pandas.pydata.org`, `numpy.org`, `requests.readthedocs.io`, `ipython.readthedocs.io`, etc.).
+3. **Glossary & Official Documentation Table**: A quick-reference table listing every module, function, method, class, and attribute introduced in that chapter, its accepted parameters, and a direct link to the official documentation (`docs.python.org`, `pandas.pydata.org`, `numpy.org`, `sqlalchemy.org`, `requests.readthedocs.io`, `ipython.readthedocs.io`, etc.).
 
 ---
 
 ## 🛠️ Built With
-* [Python 3](https://docs.python.org/3/) — Core programming language & standard library (`itertools`, `collections`, `timeit`)
-* [pandas](https://pandas.pydata.org/docs/) & [NumPy](https://numpy.org/doc/) — Data manipulation and numerical vectorization
+* [Python 3](https://docs.python.org/3/) — Core programming language & standard library (`itertools`, `collections`, `timeit`, `sqlite3`, `json`)
+* [pandas](https://pandas.pydata.org/docs/) & [NumPy](https://numpy.org/doc/) — Data ingestion, manipulation, JSON normalization, and numerical vectorization
 * [line_profiler](https://github.com/pyutils/line_profiler) & [memory_profiler](https://pypi.org/project/memory-profiler/) — Line-by-line runtime and RAM profiling
 * [Requests](https://requests.readthedocs.io/) & [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) — Web APIs and HTML parsing
 * [Matplotlib](https://matplotlib.org/stable/contents.html) & [Seaborn](https://seaborn.pydata.org/) — Data visualization
 * [SciPy](https://docs.scipy.org/doc/scipy/) & [h5py](https://docs.h5py.org/) — Scientific & hierarchical file formats
-* [SQLAlchemy](https://docs.sqlalchemy.org/) & [SQLite3](https://docs.python.org/3/library/sqlite3.html) — Relational database querying
+* [SQLAlchemy](https://docs.sqlalchemy.org/) & [SQLite3](https://docs.python.org/3/library/sqlite3.html) — Relational database connections and SQL querying
 * [TheFuzz](https://github.com/seatgeek/thefuzz) & [RecordLinkage](https://recordlinkage.readthedocs.io/) — Fuzzy string matching and entity resolution
