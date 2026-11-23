@@ -4,16 +4,17 @@
 [![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebooks-F37626?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
 [![Pandas](https://img.shields.io/badge/pandas-2.0%2B-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-1.24%2B-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Git](https://img.shields.io/badge/Git-2.40%2B-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/doc)
 [![DataCamp](https://img.shields.io/badge/Courses-DataCamp-03EF62?style=for-the-badge&logo=datacamp&logoColor=05192D)](https://www.datacamp.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-A curated collection of interactive **Jupyter Notebooks (`.ipynb`)** containing structured study notes, runnable code examples, and offline-ready mock datasets from eight **DataCamp** Python courses.
+A curated collection of interactive **Jupyter Notebooks (`.ipynb`)** containing structured study notes, runnable code examples, and offline-ready mock datasets from ten **DataCamp** Python & Git courses.
 
 Each notebook has been standardized for readability and enhanced with:
 * **Key Takeaways** at the end of every chapter.
 * **Actionable Step-by-Step Workflows** to apply the concepts in real-world projects.
-* **Comprehensive Glossaries** detailing every package, function, method, and attribute covered—complete with accepted arguments and direct links to official documentation.
-* **Self-Contained Mock Datasets** (`./datasets/`) so every code cell runs offline without broken file paths or external server dependencies.
+* **Comprehensive Glossaries** detailing every package, command, function, method, and attribute covered—complete with accepted arguments and direct links to official documentation.
+* **Self-Contained Mock Datasets & Sandboxed CLI Demos** (`./datasets/` & isolated temporary Git repos) so every code cell runs offline without broken file paths or external server dependencies.
 
 ---
 
@@ -29,6 +30,8 @@ Each notebook has been standardized for readability and enhanced with:
 | **06** | [`Cleaning_Data_in_Python_revised.ipynb`](./Cleaning_Data_in_Python_revised.ipynb) | **Cleaning Data in Python** | **Ch 1:** Data type constraints (`.astype`), range capping (`.loc[]`), exact & partial deduplication (`.duplicated`, `.groupby().agg()`)<br>**Ch 2:** Membership constraints (`set.difference`, `.isin`), categorical binning (`pd.cut`, `pd.qcut`), text cleaning<br>**Ch 3:** Currency & date uniformity (`errors='coerce'`), cross-field validation, missingness (MCAR/MAR/MNAR, `dropna`, `fillna`)<br>**Ch 4:** Fuzzy string matching (`thefuzz` / Levenshtein distance) and Record Linkage (`recordlinkage` blocking, scoring, linking) |
 | **07** | [`Writing_Efficient_Python_Code_revised.ipynb`](./Writing_Efficient_Python_Code_revised.ipynb) | **Writing Efficient Python Code** | **Ch 1:** Pythonic idioms (`import this`), built-ins (`range`, `enumerate`, `map`), `NumPy` array broadcasting & boolean indexing<br>**Ch 2:** Runtime benchmarking (`%timeit`, `%%timeit`), line-by-line profiling (`line_profiler` / `%lprun`), memory profiling (`sys.getsizeof`, `memory_profiler` / `%mprun`)<br>**Ch 3:** Combining & counting (`zip`, `collections.Counter`, `itertools.combinations`), Set theory ($O(1)$ membership, `intersection`, `difference`, `symmetric_difference`, `union`), eliminating & optimizing loops<br>**Ch 4:** `pandas` iteration hierarchy (`.iloc` vs `.iterrows()` vs `.itertuples()` vs `.apply()` vs `.values` NumPy vectorization) |
 | **08** | [`Streamlined_Data_Ingestion_with_pandas.ipynb`](./Streamlined_Data_Ingestion_with_pandas.ipynb) | **Streamlined Data Ingestion with pandas** | **Ch 1:** Flat files with `pd.read_csv()` (`sep`, `usecols`, `nrows`, `skiprows`, `header=None`, `names`, `dtype`, `na_values`, `on_bad_lines`)<br>**Ch 2:** Excel workbooks with `pd.read_excel()` (letter ranges `W:AB, AR`, `sheet_name=None`, `true_values`/`false_values`, nullable booleans, `parse_dates` & `pd.to_datetime()`)<br>**Ch 3:** Relational databases with `sqlalchemy.create_engine()` & `pd.read_sql()` (`SELECT`, `WHERE`, `AND`/`OR`, `DISTINCT`, `GROUP BY`, `JOIN`)<br>**Ch 4:** JSON orientations (`pd.read_json(..., orient='split')`), REST APIs (`requests.get()`, `params`, `headers`), flattening nested JSON (`pd.json_normalize()`), `pd.concat()`, & `df.merge()` |
+| **09** | [`Introduction_to_Git.ipynb`](./Introduction_to_Git.ipynb) | **Introduction to Git** | **Ch 1:** Version control fundamentals, shell navigation (`pwd`, `ls`, `cd`), initializing repos (`git init`), inspecting status (`git status`), staging & committing (`git add`, `git commit -m`)<br>**Ch 2:** Git architecture (`Commit`, `Tree`, `Blob`, SHA-1 hashes), history inspection (`git log`, `git show`), comparing versions (`git diff`, `HEAD`), undoing & unstaging (`git revert`, `git checkout`, `git restore --staged`) |
+| **10** | [`Intermediate_Git.ipynb`](./Intermediate_Git.ipynb) | **Intermediate Git** | **Ch 1:** Branch workflows (`git branch`, `git switch -c`), comparing branches (`git diff`), renaming & deleting (`-m`, `-d`, `-D`), fast-forward merging (`git merge`)<br>**Ch 2:** Resolving merge conflicts (`<<<<<<<`, `=======`, `>>>>>>>`), remote repositories (`git clone`, `git remote -v`, `git remote add`), synchronizing (`git fetch`, `git pull`, `git push`) |
 
 ---
 
@@ -47,6 +50,8 @@ Each notebook has been standardized for readability and enhanced with:
 ├── Cleaning_Data_in_Python_revised.ipynb
 ├── Writing_Efficient_Python_Code_revised.ipynb
 ├── Streamlined_Data_Ingestion_with_pandas.ipynb
+├── Introduction_to_Git.ipynb
+├── Intermediate_Git.ipynb
 └── datasets/
     ├── Chinook.sqlite                  # Relational database (Employee, Artist, Album tables)
     ├── a_movie.json                    # Sample OMDb movie metadata JSON
@@ -103,7 +108,7 @@ cd <your-repo-name>
 ```
 
 ### 2. Create a Virtual Environment & Install Dependencies
-Make sure you have **Python 3.10+** installed, then install the pinned dependencies using `requirements.txt`:
+Make sure you have **Python 3.10+** and **Git** installed, then install the pinned dependencies using `requirements.txt`:
 
 ```bash
 # Create and activate a virtual environment (optional but recommended)
@@ -127,15 +132,16 @@ Open any of the `*.ipynb` files in your browser or VS Code Jupyter extension and
 
 ## 📖 What You Will Find at the End of Every Chapter
 
-Every chapter across all eight notebooks follows a consistent review template designed for quick revision and interview prep:
+Every chapter across all ten notebooks follows a consistent review template designed for quick revision and interview prep:
 1. **Key Takeaways**: Concise summary of the most important concepts and gotchas from the chapter.
 2. **Step-by-Step Process to Act On**: A numbered checklist showing how to apply the chapter's tools in a real data pipeline.
-3. **Glossary & Official Documentation Table**: A quick-reference table listing every module, function, method, class, and attribute introduced in that chapter, its accepted parameters, and a direct link to the official documentation (`docs.python.org`, `pandas.pydata.org`, `numpy.org`, `sqlalchemy.org`, `requests.readthedocs.io`, `ipython.readthedocs.io`, etc.).
+3. **Glossary & Official Documentation Table**: A quick-reference table listing every module, CLI command, function, method, class, and attribute introduced in that chapter, its accepted parameters, and a direct link to the official documentation (`docs.python.org`, `git-scm.com/docs`, `pandas.pydata.org`, `numpy.org`, `sqlalchemy.org`, `requests.readthedocs.io`, `ipython.readthedocs.io`, etc.).
 
 ---
 
 ## 🛠️ Built With
-* [Python 3](https://docs.python.org/3/) — Core programming language & standard library (`itertools`, `collections`, `timeit`, `sqlite3`, `json`)
+* [Python 3](https://docs.python.org/3/) — Core programming language & standard library (`itertools`, `collections`, `timeit`, `sqlite3`, `json`, `subprocess`)
+* [Git](https://git-scm.com/doc) — Distributed version control, branching, conflict resolution, and remote synchronization
 * [pandas](https://pandas.pydata.org/docs/) & [NumPy](https://numpy.org/doc/) — Data ingestion, manipulation, JSON normalization, and numerical vectorization
 * [line_profiler](https://github.com/pyutils/line_profiler) & [memory_profiler](https://pypi.org/project/memory-profiler/) — Line-by-line runtime and RAM profiling
 * [Requests](https://requests.readthedocs.io/) & [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) — Web APIs and HTML parsing
